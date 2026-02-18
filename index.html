@@ -108,10 +108,10 @@ Economic Order Quantity (EOQ)
 <div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
 <i class="fas fa-play-circle text-green-500 text-3xl mb-4"></i>
 <h3 class="font-bold mb-4 uppercase text-xs tracking-widest text-green-400">Live Execution</h3>
-<a href="https://github.com/your-demo-link"
+<a href="https://simplicity18.github.io/diascts/"
 target="_blank"
 class="px-6 py-2 bg-green-600 rounded-full text-xs font-black hover:bg-green-500 transition">
-VIEW CODE / DEMO
+VIEW LIVE DEMO
 </a>
 </div>
 
@@ -164,7 +164,6 @@ Academic Credits
 </main>
 
 <script>
-// STOCK DATA
 const drugs = [
 { name: "Paracetamol", stock: 120 },
 { name: "Amoxicillin", stock: 75 },
@@ -173,7 +172,6 @@ const drugs = [
 { name: "Cough Syrup", stock: 60 }
 ];
 
-// Render Stock Cards
 function renderDrugs(data){
 const container = document.getElementById("stockList");
 container.innerHTML="";
@@ -187,14 +185,12 @@ container.innerHTML += `
 }
 renderDrugs(drugs);
 
-// Search Function
 function searchDrug(){
 const value = document.getElementById("searchInput").value.toLowerCase();
 const filtered = drugs.filter(d=>d.name.toLowerCase().includes(value));
 renderDrugs(filtered);
 }
 
-// Chart
 const ctx = document.getElementById('resultsChart').getContext('2d');
 new Chart(ctx,{
 type:'bar',
